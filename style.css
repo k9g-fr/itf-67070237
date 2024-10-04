@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    padding: 5px 20px;
+    column-gap: 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: darkblue;
+}
+.nav-item-container{
+    display: flex;
+    column-gap: 15px;
+}
+.nav-item{
+    color:aliceblue;
+    font-family: monospace;
+}
+{
+    margin: 0;
+}
