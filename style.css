@@ -1,25 +1,33 @@
 .navbar{
     display: flex;
-    padding: 5px 20px;
+    padding: 10px 15px;
     column-gap: 5px;
     justify-content: space-between;
     flex-direction: row;
     background-color: darkblue;
+    align-items: center;
 }
 .nav-item-container{
     display: flex;
     column-gap: 15px;
+    align-items: center;
 }
 .nav-item{
     color:aliceblue;
+}
+.button{}
+*{
     font-family: monospace;
+    font-weight: bold;
 }
-{
-    margin: 0;
+footer{
+    background-color: darkblue;
+    color: aliceblue;
+    font-size: large;
+    text-align: right;
+    padding-right: 40px;
+    border: 4px black solid;
 }
-.button{
-    font-family: monospace;
-}
-.body{
-    background-image: Get-Free-Robux-in-Roblox.webp;
+h1{
+    text-align: center;
 }
