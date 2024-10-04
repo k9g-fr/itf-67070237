@@ -15,7 +15,9 @@
 .nav-item{
     color:aliceblue;
 }
-.button{}
+.robux{
+    color: red;
+}
 *{
     font-family: monospace;
     font-weight: bold;
@@ -23,11 +25,20 @@
 footer{
     background-color: darkblue;
     color: aliceblue;
-    font-size: large;
+    font-size: 20px;
     text-align: right;
     padding-right: 40px;
     border: 4px black solid;
 }
 h1{
     text-align: center;
+}
+.me{
+    margin: 3px 41px;
+    font-size: 18px;
+}
+.my-social{
+    margin: 10px;
+    padding: 0px;
+    border: 0px;
 }
