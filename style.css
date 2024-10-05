@@ -9,9 +9,9 @@
 }
 .nav-item-container{
     display: flex;
-    column-gap: 160px;
+    column-gap: 120px;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav-item{
     color:aliceblue;
@@ -44,6 +44,19 @@ h1{
     padding: 0px;
     border: 0px;
 }
-.my_profile{
-    
-}
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+a:visited {
+    color: white;
+    text-decoration: none;
+  }
+a:hover {
+    color: red;
+    text-decoration: none;
+  }
+a:active {
+    color: blue;
+    text-decoration: none;
+  }
