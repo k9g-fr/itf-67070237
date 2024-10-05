@@ -9,14 +9,16 @@
 }
 .nav-item-container{
     display: flex;
-    column-gap: 15px;
+    column-gap: 160px;
     align-items: center;
+    font-size: 40px;
 }
 .nav-item{
     color:aliceblue;
 }
 .robux{
     color: red;
+    font-size: 40px;
 }
 *{
     font-family: monospace;
@@ -41,4 +43,7 @@ h1{
     margin: 10px;
     padding: 0px;
     border: 0px;
+}
+.my_profile{
+    
 }
