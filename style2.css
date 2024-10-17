@@ -1,28 +1,141 @@
-.profile{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    background-image: url(https://th.bing.com/th?id=OIF.dJTunmU8yen%2fcPYAH%2fzyvw&w=163&h=183&c=7&r=0&o=5&pid=1.7);
+* {
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #333;
+    background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg');
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.avatar {
+    width: 183px;
+    height: 183px;
+    border-radius: 50%;
     background-size: cover;
     background-position: center;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.notify{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+
+.notification {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
     background-color: red;
-    background-size: cover;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
-*{
-    font-family: monospace;
+
+.username {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.username:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+input {
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #4285f4;
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.3);
+    outline: none;
+}
+
+/* Stylish buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+}
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.animate {
+    animation: click-animation 0.3s ease;
 }

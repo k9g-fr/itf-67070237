@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile.exe</title>
+    <title>Phone Book</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="profile" id="profile">
-        <div class="notify">
-            <p>1</p>
-        </div>
+    <h1>
+        <span class="username" id="username">Thammarak Roekdee 67070237</span> , Hello
+    </h1>
+    <div class="avatar" id="avatar">
+        <div class="notification">1</div>
     </div>
-    <h1 id="username">Hello, User</h1>
-    <label>Set username</label><input id="input-name" type="text"><button onclick="setName()">Set</button>
-    <label>Set profile</label><input id="input-url" type="text"><button onclick="setImg()">Set</button>
-    <script>
-        const name = document.getElementById("username");
-        const input = document.getElementById("input-name");
-        const profile = document.getElementById("profile");
-        const inputUrl = document.getElementById("input-url");
-        const table = document.getElementById("table");
+    
+    <div>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button>
+    </div>
+    <div>
+        <input type="text" id="avatarInput" placeholder="Enter Image URL">
+        <button onclick="setAvatar()">SET</button>
+    </div>
+    
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Phone Number">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContacts()">EXPORT</button>
+    </div>
+    
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
 
-        function setName(){
-            name.textContent = "Hello, " + input.value;
-            input.value = "";
-
-        }
-        function setImg(){
-            profile.style.backgroundImage = "url(" + inputUrl.value +")";
-        }
-        function addRow(){
-            
-        }
-        function saveCSV() {
-        const csvContent = phonenumber.map(row => row.join(",")).join("\n"); // Convert array to CSV string
-            const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-            const link = document.createElement("a");
-            const url = URL.createObjectURL(blob);
-            link.setAttribute("href", url);
-            link.setAttribute("download", "data.csv");
-            link.style.visibility = "hidden";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-};
-    </script>
+    <script src="lab14.js"></script>
 </body>
 </html>
